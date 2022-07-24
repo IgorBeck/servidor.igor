@@ -19,11 +19,7 @@
 
    }
 
-//Mostrar um livro específico
-   if (isset($_POST['mostrar']) && $_POST['LivroEspecifico'] !== '')){
-      $_SESSION['LivroEspecifico'] = $_POST['LivroEspecifico'];
-      //header( #ADICIONAR CAMINHO PARA O MOSTRAR ESPECÍFICO);
-}
+
 
 ?>
 
