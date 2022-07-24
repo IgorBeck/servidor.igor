@@ -1,7 +1,9 @@
 <?php
 	$dadosJson = file_get_contents('db.json');
 	$dadosJsonDecodificados = json_decode($dadosJson);
-
+	print_r($dadosJson);
+	print_r($dadosJsonDecodificados);
+		
 	if(isset($_POST['inserir'])) {
 		echo "Livro enviado";
 		$values = json_encode($_POST);
@@ -12,7 +14,8 @@
 		print_r($dadosJson);	
 	}
 	if(isset($_POST['PesquisarLivro'])) {
-		print_r($dadosJson);	
+		print_r($dadosJson);
+		if(
 	}
 ?>
 
