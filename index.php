@@ -1,19 +1,8 @@
 <?php
    session_start();
-
-//Limpar cache
-   if (isset($_POST['limpar'])){
-      $_SESSION['disciplinas'] = [];
-   }
-
 //Mostrar os livros
    if (isset($_POST['mostrar'])){
       header('Location https://igorbecker.herokuapp.com/page.php');
-   }
-//Mostrar um livro específico
-   if (isset($_POST['MostrarTudo'])){
-      $_SESSION['LivroEspecifico'] = $_POST['LivroEspecifico'];
-      //header( #ADICIONAR CAMINHO PARA O MOSTRAR ESPECÍFICO);
    }
 
 //Inserir livros
@@ -50,17 +39,10 @@
             <br>
             <input type="submit" value="Inserir Livro">
         </form>
-        <form method="post">
+       
+        <form action="page.php" method="post" >
             Preencher para mostrar <br>
-            Livro específico:(código) <br>
-            <input type="text" name="LivroEspecifico"><br><br>
-            <input type="submit" name="mostrar" value="Mostrar Livros">
-            <br><br>
             <input type="submit" name="MostrarTudo" value="Mostrar tudo">
-         </form>
-         <br>
-         <form method="post">
-            <input type="submit" name="limpar" value="limpar cache">
-         </form><br>
+        </form>
     </body>
 </html>
