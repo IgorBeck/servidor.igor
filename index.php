@@ -8,7 +8,7 @@
 
 //Mostrar os livros
    if (isset($_POST['mostrar'])){
-      header(page.php);
+      header('Location https://igorbecker.herokuapp.com/page.php');
    }
 //Mostrar um livro específico
    if (isset($_POST['MostrarTudo'])){
