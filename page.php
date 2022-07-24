@@ -16,7 +16,7 @@
 		foreach ($dadosJsonDecodificados as $key => $value) {
     			if($value == $isbn) {
         			$msg = 'Encontrado na lista!';
-				print_r($msg);	
+				echo "nome: $obj->nome<br>";
 			}
 		}
     	}	
