@@ -2,10 +2,8 @@
 	$dadosJson = file_get_contents('db.json');
 	$dadosJsonDecodificados = json_decode($dadosJson);
 
-	print_r($dadosJsonDecodificados);
-
-	if($_POST) {
-		
+	if(isset($_POST['MostrarTudo'])) {
+		print_r($dadosJsonDecodificados);	
 	}
 ?>
 
