@@ -1,4 +1,14 @@
+<?php
+   session_start();
 
+//Inserir livros
+   if (isset ($_POST['nomeAutor'])){
+            $_SESSION['Livro'][] = jason_encode($_POST);
+            echo ('Livro Inserido');
+   }
+
+
+?>
 
 <html>
     <head>
