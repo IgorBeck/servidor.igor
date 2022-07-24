@@ -11,6 +11,17 @@
       "paginas":"210",
       "isbn":"1234567891011",
       "assuntos":"Eletronica"
+    },
+    {
+      "nomeAutor":"Lucas",
+      "sobrenome":"Silva",
+      "titulo":"Calculo",
+      "editora":"Saraiva",
+      "cidade":"Itajai",
+      "ano":"2022",
+      "paginas":"500",
+      "isbn":"2234567891011",
+      "assuntos":"Matematica"
     }
   ]
 }
