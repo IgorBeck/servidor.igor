@@ -2,7 +2,7 @@
    session_start();
    if (isset ($_POST['via'])){
             $_SESSION['Livro'][] = jason_encode($_POST);
-            echo ('Livro Inserido')
+            echo ('Livro Inserido');
    }
 ?>
 <!DOCTYPE html>
