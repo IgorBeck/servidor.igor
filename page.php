@@ -14,12 +14,6 @@
 	if(isset($_POST['PesquisarLivro'])) {
 		print_r($dadosJson);	
 	}
-
-	<a href='https://trab3.herokuapp.com/'>
-            <br>
-            Voltar
-        </a>
-
 ?>
 
 
