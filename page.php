@@ -3,7 +3,7 @@
 	$dadosJsonDecodificados = json_decode($dadosJson);
 
 	if(isset($_POST['MostrarTudo'])) {
-		print_r($dadosJsonDecodificados);	
+		print_r($dadosJson);	
 	}
 ?>
 
