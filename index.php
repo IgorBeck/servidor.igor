@@ -13,9 +13,6 @@
     <body>
         // Campos a serem preenchidos
         <form method="post">
-            <p>0 visualizar banco de dados / 1 enviar dados</p>
-            <input type="text" name="via" placeholder="0 ou 1">
-            <br>
             <input type="text" name="nomeAutor" placeholder="Nome autor">
             <br>
             <input type="text" name="sobrenome" placeholder="Sobrenome autor">
