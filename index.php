@@ -31,7 +31,8 @@
         </form>
         
         <form action="page.php" method="post" >
-            <input type="submit" name="PesquisarLivro" value="Pesquisar Livro">
+            <input type="text" name="isbn" placeholder="ISBN">
+            <input type="submit" name="PesquisarLivro" value="Pesquisar Livro por ISBN">
         </form>
         
     </body>
