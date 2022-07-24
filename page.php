@@ -18,6 +18,7 @@
         			$msg = 'Encontrado na lista!';
 			}
 		}
+		echo "entro aqui no if";
     	}	
 ?>
 
