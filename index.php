@@ -7,24 +7,7 @@
             echo ('Livro Inserido');
    }
 
-//Limpar cache
-   if (isset($_POST['limpar'])){
-      $_SESSION['disciplinas'] = [];
-   }
 
-//Mostrar os livros
-   if (isset($_POST['mostrar']) && $_POST['LivroEspecifico'] == '')){
-
-      //header( #ADICIONAR CAMINHO PARA O MOSTRAR ESPECÍFICO);
-
-   }
-
-//Mostrar um livro específico
-   if (isset($_POST['mostrar']) && $_POST['LivroEspecifico'] !== '')){
-      $_SESSION['LivroEspecifico'] = $_POST['LivroEspecifico'];
-      //header( #ADICIONAR CAMINHO PARA O MOSTRAR ESPECÍFICO);
-   }
-?>
 
 <html>
     <head>
