@@ -4,7 +4,7 @@
 	
 	session_start();
 
-	if($_POST) {
+	if($_POST['LivroEspecifico'] == '') {
 		print_r($dadosJsonDecodificados);
 	}
 ?>
