@@ -2,20 +2,12 @@
    session_start();
    if (isset ($_POST['via'])){
             $_SESSION['Livro'][] = jason_encode($_POST);
-            echo <'Livro INserido">
+            echo ('Livro Inserido')
    }
+
+
 ?>
-
-        <form action="page.php" method="POST">
-        
-        if (isset ($_POST['via'])){
-            $_SESSION['Livro'][] = jason_encode($_POST);
-
-            echo <'Livro INserido">
-
-        }
-
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>pagina de requisição GET e POST</title>
@@ -48,5 +40,5 @@
          <form method="post">
             <input type="submit" name="limpar" value="limpar cache">
             <\form><br>
-    </body>    
+    </body>
 </html>
