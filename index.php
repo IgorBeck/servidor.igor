@@ -8,9 +8,7 @@
 
 //Mostrar os livros
    if (isset($_POST['mostrar'])){
-
-      //header( #ADICIONAR CAMINHO PARA O MOSTRAR);
-
+      header(page.php);
    }
 //Mostrar um livro específico
    if (isset($_POST['MostrarTudo'])){
