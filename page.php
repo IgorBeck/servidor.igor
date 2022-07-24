@@ -21,13 +21,6 @@
         </a>
 
 ?>
-<html>
-	<body>
-		<a href='https://trab3.herokuapp.com/'>
-            		<br>
-            		Voltar
-        	</a>
-	</body>
-</html>
+
 
 
