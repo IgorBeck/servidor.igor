@@ -1,17 +1,3 @@
-<?php
-   session_start();
-//Mostrar os livros
-   if (isset($_POST['mostrar'])){
-      header('Location https://igorbecker.herokuapp.com/page.php');
-   }
-
-//Inserir livros
-   if (isset ($_POST['nomeAutor'])){
-            $_SESSION['Livro'][] = jason_encode($_POST);
-            echo ('Livro Inserido');
-   }
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
