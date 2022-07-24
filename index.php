@@ -7,6 +7,12 @@
             echo ('Livro Inserido');
    }
 
+//Limpar cache
+   if (isset($_POST['limpar'])){
+      $_SESSION['disciplinas'] = [];
+   }
+
+
 
 ?>
 
