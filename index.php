@@ -37,7 +37,7 @@
             <br>
             <input type="text" name="assuntos" placeholder="Assuntos abordados no livro">
             <br>
-            <input type="submit" value="Inserir Livro">
+            <input type="submit" naome="inserir" value="Inserir Livro">
         </form>
        
         <form action="page.php" method="post" >
