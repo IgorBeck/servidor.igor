@@ -1,6 +1,3 @@
-{
-  "Livro":
-  [
     {
       "nomeAutor":"Jorge",
       "sobrenome":"Santos",
@@ -23,5 +20,3 @@
       "isbn":"2234567891011",
       "assuntos":"Matematica"
     }
-  ]
-}
