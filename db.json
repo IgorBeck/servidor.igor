@@ -1,13 +1,16 @@
 {
-  "clientes":
+  "Livro":
   [
     {
-      "id":"1",
-      "nome":"marcos"
-    },
-    {
-      "id":"2",
-      "nome":"joão"
+      "nomeAutor":"Jorge",
+      "sobrenome":"Santos",
+      "titulo":"Circuitos",
+      "editora":"Saraiva",
+      "cidade":"Blumenau",
+      "ano":"2022",
+      "paginas":"210",
+      "isbn":"1234567891011",
+      "assuntos":"Eletronica",
     }
   ]
 }
