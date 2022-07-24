@@ -4,7 +4,7 @@
         <title>pagina de requisição GET e POST</title>
     </head>
     <body>
-        <form method="post">
+        <form action="page.php" method="post">
             <input type="text" name="nomeAutor" placeholder="Nome autor">
             <br>
             <input type="text" name="sobrenome" placeholder="Sobrenome autor">
