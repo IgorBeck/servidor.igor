@@ -13,7 +13,7 @@
    }
 
 //Mostrar os livros
-   if (isset($_POST['mostrar']) && $_POST['LivroEspecifico'] == '')){
+   if (isset($_POST['mostrar']) && isset($_POST['LivroEspecifico'])){
 
       //header( #ADICIONAR CAMINHO PARA O MOSTRAR ESPECÍFICO);
 
