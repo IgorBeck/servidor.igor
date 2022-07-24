@@ -1,8 +1,24 @@
 <?php
    session_start();
-   if (isset ($_POST['via'])){
+//Inserir livros
+   if (isset ($_POST['nomeAutor'])){
             $_SESSION['Livro'][] = jason_encode($_POST);
             echo ('Livro Inserido');
+   }
+//Limpar cache
+   if (isset($_POST['limpar'])){
+      $_SeSSION['disciplinas'] = [];
+   }
+//Mostrar os livros
+   if (isset($_POST['mostrar']) && $_POST['LivroEspecifico'] == '')){
+
+      #header( #ADICIONAR CAMINHO PARA O MOSTRAR ESPECÍFICO);
+
+   }
+//Mostrar um livro específico
+   if (isset($_POST['mostrar']) && $_POST['LivroEspecifico'] !== '')){
+      $_SESSION['LivroEspecifico'] = $_POST['LivroEspecifico'];
+      #header( #ADICIONAR CAMINHO PARA O MOSTRAR ESPECÍFICO);
    }
 ?>
 <!DOCTYPE html>
@@ -33,8 +49,7 @@
             <br>
             <input type="submit" value="Inserir Livro">
         </form>
-
-        <form method="post">
+ <form method="post">
             Preencher para mostrar <br>
             Livro específico:(código) <br>
             <input type="text" name="LivroEspecifico"><br><br>
