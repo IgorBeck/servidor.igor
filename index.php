@@ -27,14 +27,10 @@
         </form>
        
         <form action="page.php" method="post" >
-            Preencher para mostrar <br>
             <input type="submit" name="MostrarTudo" value="Mostrar tudo">
         </form>
+        
         <form action="page.php" method="post" >
-            <input type="submit" name="MostrarTudo" value="Mostrar tudo">
-        </form>
-        <form action="page.php" method="post" >
-            
             <input type="submit" name="PesquisarLivro" value="Pesquisar Livro">
         </form>
         
