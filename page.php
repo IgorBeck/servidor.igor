@@ -1,7 +1,7 @@
 <?php
 	$dadosJson = file_get_contents('db.json');
 	$dadosJsonDecodificados = json_decode($dadosJson);
-	if($_POST['nomeAutor'] == NULL ) {
+	if($_POST['nomeAutor'] == '' ) {
 		print_r($dadosJsonDecodificados);
 	} else {
 		$json = file_get_contents('php//input');
