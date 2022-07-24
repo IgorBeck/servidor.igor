@@ -4,8 +4,6 @@
             $_SESSION['Livro'][] = jason_encode($_POST);
             echo ('Livro Inserido')
    }
-
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,14 +17,23 @@
             <input type="text" name="via" placeholder="0 ou 1">
             <br>
             <input type="text" name="nomeAutor" placeholder="Nome autor">
-            <input type="text" name="nome" placeholder="Nome autor">
             <br>
             <input type="text" name="sobrenome" placeholder="Sobrenome autor">
             <br>
+            <input type="text" name="titulo" placeholder="Título do livro">
+            <br>
+            <input type="text" name="editora" placeholder="Editora">
+            <br>
+            <input type="text" name="cidade" placeholder="Cidade da publicação">
+            <br>
+            <input type="text" name="ano" placeholder="Ano da publicação">
+            <br>
+            <input type="text" name="paginas" placeholder="Quantidade de páginas">
+            <br>
+            <input type="text" name="isbn" placeholder="ISBN">
             <br>
             <input type="text" name="assuntos" placeholder="Assuntos abordados no livro">
             <br>
-            <input type="submit" value="batata">
             <input type="submit" value="Inserir Livro">
         </form>
 
