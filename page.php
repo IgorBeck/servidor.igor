@@ -16,10 +16,9 @@
 		foreach ($dadosJsonDecodificados as $key => $value) {
     			if($value == $isbn) {
         			$msg = 'Encontrado na lista!';
-				print_r($msg);
-				print_r($value);
-				
+				print_r($msg);	
 			}
+			print_r($value);
 		}
     	}	
 ?>
