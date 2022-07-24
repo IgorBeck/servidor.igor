@@ -35,5 +35,9 @@
             <input type="submit" name="PesquisarLivro" value="Pesquisar Livro por ISBN">
         </form>
         
+        <a href='https://trab3.herokuapp.com/'>
+            <br>
+            Voltar
+        </a>
     </body>
 </html>
