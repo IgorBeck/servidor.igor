@@ -7,7 +7,7 @@
    }
 //Limpar cache
    if (isset($_POST['limpar'])){
-      $_SeSSION['disciplinas'] = [];
+      $_SESSION['disciplinas'] = [];
    }
 //Mostrar os livros
    if (isset($_POST['mostrar']) && $_POST['LivroEspecifico'] == '')){
