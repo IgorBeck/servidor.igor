@@ -1,12 +1,6 @@
 <?php
    session_start();
 
-//Inserir livros
-   if (isset ($_POST['nomeAutor'])){
-            $_SESSION['Livro'][] = jason_encode($_POST);
-            echo ('Livro Inserido');
-   }
-
 //Limpar cache
    if (isset($_POST['limpar'])){
       $_SESSION['disciplinas'] = [];
@@ -22,6 +16,12 @@
    if (isset($_POST['MostrarTudo'])){
       $_SESSION['LivroEspecifico'] = $_POST['LivroEspecifico'];
       //header( #ADICIONAR CAMINHO PARA O MOSTRAR ESPECÍFICO);
+   }
+
+//Inserir livros
+   if (isset ($_POST['nomeAutor'])){
+            $_SESSION['Livro'][] = jason_encode($_POST);
+            echo ('Livro Inserido');
    }
 ?>
 
