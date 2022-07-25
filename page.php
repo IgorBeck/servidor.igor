@@ -17,7 +17,7 @@
 	
 	if(isset($_POST['PesquisarLivro'])) {
 		$isbn = $_POST['isbn'];
-		foreach ($dadosJsonDecodificados as $key => $value) {
+		foreach ($dadosJsonDecodificados->Livro as $key => $value) {
     			if($value == $isbn) {
         			$msg = 'Encontrado na lista!';	
 				print_r($msg);
