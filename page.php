@@ -4,7 +4,8 @@
 				
 	if(isset($_POST['inserir'])) {
 		echo "Livro enviado";
-		$values = json_encode($_POST);
+		//$values = json_encode($_POST);
+		$values = $_POST;
 		$dadosJsonDecodificados["Livro"][] = $values;
 		$fp = fopen('db.json', 'w');
 		fwrite($fp, json_encode($dadosJsonDecodificados));
