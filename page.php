@@ -19,7 +19,7 @@
 		$isbn = $_POST['isbn'];
 		foreach ($dadosJsonDecodificados["Livro"] as $key => $value) {
 			foreach($value as $chave => $valor) {
-    				if($value == $isbn) {
+    				if($valor == $isbn) {
         				$msg = 'Encontrado na lista!';	
 					print_r($msg);
 				}
