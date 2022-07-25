@@ -5,7 +5,7 @@
 	if(isset($_POST['inserir'])) {
 		echo "Livro enviado";
 		$values = json_encode($_POST);
-		file_put_contents('db.json', $values, FILE_APPEND);
+		file_put_contents('db.json->Livro', $values, FILE_APPEND);
 	}
 
 	if(isset($_POST['MostrarTudo'])) {
