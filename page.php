@@ -22,7 +22,6 @@
         			$msg = 'Encontrado na lista!';	
 				print_r($msg);
 			}
-			echo "ola mundo";
 		}
     	}	
 ?>
