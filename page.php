@@ -1,10 +1,6 @@
 <?php
 	$dadosJson = file_get_contents('db.json');
 	$dadosJsonDecodificados = json_decode($dadosJson, true);
-	$dadosJsonDecodificados["Livro"][] = "999";
-	$fp = fopen('db.json', 'w');
-	fwrite($fp, json_encode($dadosJsonDecodificados));
-	fclose($fp);
 				
 	if(isset($_POST['inserir'])) {
 		echo "Livro enviado";
