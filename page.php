@@ -2,8 +2,7 @@
 	$dadosJson = file_get_contents('db.json');
 	$dadosJsonDecodificados = json_decode($dadosJson, true);
 	
-	//----------------------------------------------------------------------//
-	//enviando dados em Json pela pagina
+	
 	if(isset($_POST['inserir'])) {
 		echo "Livro enviado";
 		$values = $_POST;
