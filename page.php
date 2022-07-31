@@ -15,8 +15,7 @@
 	}
 
 	if($_GET) {
-		$isbm = $_GET['isbm'];
-		if ($isbm == null) {
+		if ($_GET['isbm'] == null) {
 			print_r($dadosJson);
 		} else {
 			foreach ($dadosJsonDecodificados["Livro"] as $key => $value) {
