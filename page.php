@@ -21,8 +21,6 @@
 		} else {
 			foreach ($dadosJsonDecodificados["Livro"] as $key => $value) {
 				foreach($value as $chave => $valor) {
-					print_r($value);
-					print_r($isbn);
     					if($valor == $isbn) {
 						echo 'oba ';
 						$retorna = json_encode($value); 
