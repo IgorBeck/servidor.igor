@@ -14,7 +14,7 @@
 			}		
 		}
 	} else {	
-		if(isset($_POST)) {
+		if($_POST) {
 			echo 'Livro enviado ao servidor';
 			$post = $_POST;
 			$dadosJsonDecodificados["Livro"][] = $post;
