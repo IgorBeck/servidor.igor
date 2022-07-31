@@ -28,7 +28,12 @@
 		$isbm = $_GET['isbm'];
 		if ($isbm == null) {
 			print_r($dadosJson);
+			print_r($isbm);
+			echo 'vazio';
+			
 		} else {
+			echo 'cheio';
+			print_r($isbm);
 			foreach ($dadosJsonDecodificados["Livro"] as $key => $value) {
 				foreach($value as $chave => $valor) {
 					echo 'percorreu ';
