@@ -28,7 +28,6 @@
 		$isbm = $_GET['isbm'];
 		if ($isbm == null) {
 			print_r($dadosJson);
-			echo 'esta vazio';
 		} else {
 			foreach ($dadosJsonDecodificados["Livro"] as $key => $value) {
 				foreach($value as $chave => $valor) {
