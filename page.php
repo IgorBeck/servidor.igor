@@ -36,7 +36,7 @@
 		fclose($fp);
 	}	
 
-	if($_GET) {
+	if(isset($_GET)) {
 		print_r($dadosJson);
 		echo 'toma no cu';
 	}
