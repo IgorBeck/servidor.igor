@@ -38,23 +38,22 @@
 	}	
 
 	if(isset($_GET)) {
-		$dados = $_GET['isbm'];
-		if ($dados == null) {
+		$isbm = $_GET['isbm'];
+		if ($isbm == null) {
 			print_r($dadosJson);
 			echo 'esta vazio';
 		} else {
-			print_r($dados);
-			print_r($_GET['isbm']);
-			foreach ($dadosJsonDecodificados["Livro"] as $key => $dados) {
-				foreach($dados as $chave => $valor) {
+			foreach ($dadosJsonDecodificados["Livro"] as $key => $value) {
+				foreach($value as $chave => $valor) {
     					if($valor == $isbn) {
 						echo 'ultimo if';
 						$retorna = json_encode($value); 
 						print_r($retorna);
 					}
 				}
-			}
+			}		
 		}
+		
 	}
 
 ?>
