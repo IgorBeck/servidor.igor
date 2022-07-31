@@ -5,12 +5,13 @@
 
 		
 	if($_POST) {
-		echo 'Livro enviado ao servidor';
 		$post = $_POST;
 		$dadosJsonDecodificados["Livro"][] = $post;
 		$fp = fopen('db.json', 'w');
 		fwrite($fp, json_encode($dadosJsonDecodificados));
 		fclose($fp);
+		echo 'Livro enviado ao servidor ';
+		print_r($post);
 	
 	} else {
 		if(isset($_GET)) {
