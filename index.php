@@ -26,7 +26,7 @@
             <input type="submit" name="inserir" value="Inserir Livro">
         </form>
        
-        <form action="page.php" method="post" >
+        <form action="page.php" method="get" >
             <input type="submit" name="MostrarTudo" value="Mostrar tudo">
         </form>
         
