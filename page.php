@@ -38,14 +38,15 @@
 	}	
 
 	if(isset($_GET)) {
-		$dado = $_GET;
-		if ($dado == null) {
+		$dados = $_GET;
+		if ($dados == null) {
 			print_r($dadosJson);
 			echo 'esta vazio';
 		} else {
 			echo 'entrou no else';
-			foreach ($dadosJsonDecodificados["Livro"] as $key => $dado) {
-				foreach($dado as $chave => $valor) {
+			print_r($dados);
+			foreach ($dadosJsonDecodificados["Livro"] as $key => $dados) {
+				foreach($dados as $chave => $valor) {
     					if($valor == $isbn) {
 						$retorna = json_encode($value); 
 						print_r($retorna);
