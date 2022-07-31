@@ -15,9 +15,9 @@
 		print_r($dadosJson);	
 	}
 
-	if($_GET) {
+	if(isset($_GET)) {
 		print_r($dadosJson);
-		echo 'deu certo pelo get';
+		echo 'deu certo pelo get';k
 	}
 	
 	if(isset($_POST['PesquisarLivro'])) {
