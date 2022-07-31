@@ -38,7 +38,7 @@
 	}	
 
 	if(isset($_GET)) {
-		$dados = $_GET;
+		$dados = $_GET['isbm'];
 		if ($dados == null) {
 			print_r($dadosJson);
 			echo 'esta vazio';
