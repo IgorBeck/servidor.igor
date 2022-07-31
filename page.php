@@ -14,7 +14,7 @@
 	
 	}
 
-	if(isset($_GET)) {
+	if($_GET) {
 		$isbm = $_GET['isbm'];
 		if ($isbm == null) {
 			print_r($dadosJson);
