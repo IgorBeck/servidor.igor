@@ -11,11 +11,7 @@
 		fclose($fp);
 	}
 
-	if(isset($_GET['MostrarTudo'])) {
-		print_r($dadosJson);	
-	}
-
-	if(isset($_GET)) {
+	if($_GET) {
 		print_r($dadosJson);
 		echo 'deu certo pelo get';
 	}
