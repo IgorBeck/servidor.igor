@@ -2,7 +2,8 @@
 	$dadosJson = file_get_contents('db.json');
 	$dadosJsonDecodificados = json_decode($dadosJson, true);
 	
-	
+	//----------------------------------------------------------------------//
+	// enviando dados em Json pelo site
 	if(isset($_POST['inserir'])) {
 		echo "Livro enviado";
 		$values = $_POST;
@@ -37,11 +38,14 @@
 	}	
 
 	if(isset($_GET)) {
-		print_r($dadosJson);
-		echo 'toma no cu';
+		$dados = $_GET;
+		if ($dados == null) {
+			print_r($dadosJson);
+			echo 'esta vazio';
+		} else
+		echo 'nao esta vazio';
 	}
-	
-		
+
 ?>
 
 
