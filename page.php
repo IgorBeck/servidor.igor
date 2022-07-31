@@ -11,10 +11,15 @@
 		fclose($fp);
 	}
 
-	if($_GET) {
+	if(isset($_POST['MostrarTudo'])) {
 		print_r($dadosJson);	
 	}
 
+	if($_GET) {
+		print_r($dadosJson);
+		echo 'deu certo pelo get';
+	}
+	
 	if(isset($_POST['PesquisarLivro'])) {
 		$isbn = $_POST['isbn'];
 		foreach ($dadosJsonDecodificados["Livro"] as $key => $value) {
@@ -27,6 +32,7 @@
 		}
     	}	
 ?>
+
 
 
 
