@@ -14,7 +14,7 @@
 		print_r($post);
 	
 	} else {
-		if(isset($_GET)) {
+		
 			if ($_GET['isbn'] == null) {
 				print_r($dadosJson);
 			} else {
@@ -28,7 +28,7 @@
 				}		
 			}
 		
-		}
+		
 	}
 
 ?>
