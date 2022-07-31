@@ -12,22 +12,22 @@
 		fwrite($fp, json_encode($dadosJsonDecodificados));
 		fclose($fp);
 	
-	}
-
-	if(isset($_GET)) {
-		if ($_GET['isbn'] == null) {
-			print_r($dadosJson);
-		} else {
-			foreach ($dadosJsonDecodificados["Livro"] as $key => $value) {
-				foreach($value as $chave => $valor) {
-    					if($valor == $_GET['isbn']) {
-						$retorna = json_encode($value); 
-						print_r($retorna);
-					}
+	} else {
+		if(isset($_GET)) {
+			if ($_GET['isbn'] == null) {
+				print_r($dadosJson);
+			} else {
+				foreach ($dadosJsonDecodificados["Livro"] as $key => $value) {
+					foreach($value as $chave => $valor) {
+    						if($valor == $_GET['isbn']) {
+							$retorna = json_encode($value); 
+							print_r($retorna);
+						}
+					}		
 				}		
-			}		
-		}
+			}
 		
+		}
 	}
 
 ?>
