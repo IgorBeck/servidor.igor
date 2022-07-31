@@ -30,11 +30,9 @@
 			print_r($dadosJson);
 			echo 'vazio ';
 		} else {
-			echo 'else ';
 			foreach ($dadosJsonDecodificados["Livro"] as $key => $value) {
 				foreach($value as $chave => $valor) {
     					if($valor == $_GET['isbm']) {
-						echo 'oba ';
 						$retorna = json_encode($value); 
 						print_r($retorna);
 					}
