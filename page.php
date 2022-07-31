@@ -1,7 +1,9 @@
 <?php
 	$dadosJson = file_get_contents('db.json');
 	$dadosJsonDecodificados = json_decode($dadosJson, true);
-				
+	
+	//----------------------------------------------------------------------//
+	//enviando dados em Json pela pagina
 	if(isset($_POST['inserir'])) {
 		echo "Livro enviado";
 		$values = $_POST;
@@ -10,22 +12,6 @@
 		fwrite($fp, json_encode($dadosJsonDecodificados));
 		fclose($fp);
 	}
-
-	if($_POST) {
-		echo 'deu certo pelo post';
-		$post = $_POST;
-		$dadosJsonDecodificados["Livro"][] = $post;
-		$fp = fopen('db.json', 'w');
-		fwrite($fp, json_encode($dadosJsonDecodificados));
-		fclose($fp);
-	}	
-
-	if($_GET) {
-		print_r($dadosJson);
-		echo 'deu certo pelo get';
-	}
-	
-	
 
 	if(isset($_POST['PesquisarLivro'])) {
 		$isbn = $_POST['isbn'];
@@ -37,7 +23,25 @@
 				}
 			}		
 		}
-    	}	
+    	}
+
+	//----------------------------------------------------------------------//
+	// enviando dados em Json pelo prompt
+
+	if($_POST) {
+		echo 'Livro enviado ao servidor';
+		$post = $_POST;
+		$dadosJsonDecodificados["Livro"][] = $post;
+		$fp = fopen('db.json', 'w');
+		fwrite($fp, json_encode($dadosJsonDecodificados));
+		fclose($fp);
+	}	
+
+	if($_GET) {
+		print_r($dadosJson);
+	}
+	
+		
 ?>
 
 
