@@ -13,8 +13,9 @@
 
 	if($_POST) {
 		echo 'deu certo pelo post';
-		$values = $_POST;
-		$dadosJsonDecodificados["Livro"][] = $values;
+		$post = $_POST;
+		$dados_post = json_decode($post, true);
+		$dadosJsonDecodificados["Livro"][] = $dados_post;
 		$fp = fopen('db.json', 'w');
 		fwrite($fp, json_encode($dadosJsonDecodificados));
 		fclose($fp);
