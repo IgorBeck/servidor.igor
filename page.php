@@ -46,8 +46,11 @@
 			echo 'entrou no else';
 			print_r($dados);
 			foreach ($dadosJsonDecodificados["Livro"] as $key => $dados) {
+				echo 'primeiro foreach';
 				foreach($dados as $chave => $valor) {
+					echo 'segundo foreach';
     					if($valor == $isbn) {
+						echo 'ultimo if';
 						$retorna = json_encode($value); 
 						print_r($retorna);
 					}
