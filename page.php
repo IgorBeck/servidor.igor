@@ -14,7 +14,7 @@
 			}		
 		}
 	} else {	
-		if($_POST) {
+		if(isset($_POST)) {
 			echo 'Livro enviado ao servidor';
 			$post = $_POST;
 			$dadosJsonDecodificados["Livro"][] = $post;
@@ -28,7 +28,6 @@
 		$isbm = $_GET['isbm'];
 		if ($isbm == null) {
 			print_r($dadosJson);
-			echo 'vazio ';
 		} else {
 			foreach ($dadosJsonDecodificados["Livro"] as $key => $value) {
 				foreach($value as $chave => $valor) {
