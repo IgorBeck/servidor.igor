@@ -14,9 +14,7 @@
 	if($_POST) {
 		echo 'deu certo pelo post';
 		$post = $_POST;
-		$jsonEstranho = str_replace('"', "", $post);
-		$jsonCorreto = "{".preg_replace('/(\w+)/', '"$0"', $jsonEstranho)."}";
-		$dadosJsonDecodificados["Livro"][] = $jsonCorreto;
+		$dadosJsonDecodificados["Livro"][] = $post;
 		$fp = fopen('db.json', 'w');
 		fwrite($fp, json_encode($dadosJsonDecodificados));
 		fclose($fp);
