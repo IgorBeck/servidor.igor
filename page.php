@@ -39,6 +39,7 @@
 
 	if($_GET) {
 		print_r($dadosJson);
+		echo 'toma no cu';
 	}
 	
 		
