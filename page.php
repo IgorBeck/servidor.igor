@@ -14,10 +14,12 @@
 	
 	}
 
-	if($_GET) {
+	if(isset($_GET)) {
 		if ($_GET['isbm'] == null) {
 			print_r($dadosJson);
+			echo 'vazio';
 		} else {
+			echo 'cheio';
 			foreach ($dadosJsonDecodificados["Livro"] as $key => $value) {
 				foreach($value as $chave => $valor) {
     					if($valor == $_GET['isbm']) {
