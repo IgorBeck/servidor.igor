@@ -45,13 +45,13 @@
 		} else {
 			foreach ($dadosJsonDecodificados["Livro"] as $key => $value) {
 				foreach($value as $chave => $valor) {
-					echo 'ultimo foreach';
+					echo 'percorreu ';
     					if($valor == $isbn) {
-						echo 'ultimo if';
+						echo 'oba ';
 						$retorna = json_encode($value); 
 						print_r($retorna);
 					}
-				}
+				}		
 			}		
 		}
 		
