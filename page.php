@@ -43,6 +43,7 @@
 			print_r($dadosJson);
 			echo 'esta vazio';
 		} else
+		print_r($dados);	
 		echo 'nao esta vazio';
 	}
 
