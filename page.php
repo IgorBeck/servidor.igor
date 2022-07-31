@@ -11,7 +11,7 @@
 		fclose($fp);
 	}
 
-	if(isset($_POST['MostrarTudo'])) {
+	if(isset($_GET['MostrarTudo'])) {
 		print_r($dadosJson);	
 	}
 
