@@ -43,12 +43,10 @@
 			print_r($dadosJson);
 			echo 'esta vazio';
 		} else {
-			echo 'entrou no else';
 			print_r($dados);
+			print_r($_GET['isbm']);
 			foreach ($dadosJsonDecodificados["Livro"] as $key => $dados) {
-				echo 'primeiro foreach';
 				foreach($dados as $chave => $valor) {
-					echo 'segundo foreach';
     					if($valor == $isbn) {
 						echo 'ultimo if';
 						$retorna = json_encode($value); 
