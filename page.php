@@ -7,6 +7,8 @@
 	if($_POST) {
 		echo 'Livro enviado ao servidor';
 		$post = $_POST;
+		json_encode($post);
+		print_r($post);
 		$dadosJsonDecodificados["Livro"][] = $post;
 		$fp = fopen('db.json', 'w');
 		fwrite($fp, json_encode($dadosJsonDecodificados));
