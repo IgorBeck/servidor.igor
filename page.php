@@ -1,8 +1,9 @@
 <?php
 	$dadosJson = file_get_contents('db.json');
 	$dadosJsonDecodificados = json_decode($dadosJson, true);
-				
-	if($_POST) {
+	$method = $_SERVER['REQUEST_METHOD'];		
+
+	if($method === '$_POST') {
 		echo "Livro enviado";
 		$values = $_POST;
 		$value =  json_decode($values, true);
@@ -12,7 +13,7 @@
 		fwrite($fp, json_encode($dadosJsonDecodificados));
 		fclose($fp);
 	}else {
-		if(isset($_GET)) {
+		if($method === '$_GET') {
 			if ($_GET['isbn'] == null) {
 				print_r($dadosJson);
 			} else {
