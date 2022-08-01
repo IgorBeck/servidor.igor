@@ -12,7 +12,7 @@
 		fclose($fp);
 		echo 'Livro enviado ao servidor ';
 		print_r($post);
-		print_r($dadosJson);
+		//print_r($dadosJson);
 	
 	
 
