@@ -12,23 +12,8 @@
 		fclose($fp);
 		echo 'Livro enviado ao servidor ';
 		print_r($post);
+		print_r($dadosJson);
 	
-	} else {
-		if(isset($_GET)) {
-			if ($_GET['isbn'] == null) {
-				print_r($dadosJson);
-			} else {
-				foreach ($dadosJsonDecodificados["Livro"] as $key => $value) {
-					foreach($value as $chave => $valor) {
-    						if($valor == $_GET['isbn']) {
-							$retorna = json_encode($value); 
-							print_r($retorna);
-						}
-					}		
-				}		
-			}
-		
-		}
 	}
 
 ?>
