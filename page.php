@@ -5,7 +5,7 @@
 
 		
 	
-		$post = $_POST;
+		$post = $_POST[];
 		$dadosJsonDecodificados["Livro"][] = $post;
 		$fp = fopen('db.json', 'w');
 		fwrite($fp, json_encode($dadosJsonDecodificados));
