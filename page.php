@@ -7,7 +7,7 @@
 		$values = $_POST;
 		$dadosJsonDecodificados["Livro"][] = $values;
 		$fp = fopen('db.json', 'w');
-		fwrite($fp, json_encode($dadosJsonDecodificados));
+		fwrite($fp, $dadosJsonDecodificados);
 		fclose($fp);
 	}else {
 		if(isset($_GET)) {
