@@ -4,7 +4,7 @@
 	
 
 		
-	if($_POST) {
+	
 		$post = $_POST;
 		$dadosJsonDecodificados["Livro"][] = $post;
 		$fp = fopen('db.json', 'w');
@@ -14,7 +14,7 @@
 		print_r($post);
 		print_r($dadosJson);
 	
-	}
+	
 
 ?>
 
