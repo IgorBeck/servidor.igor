@@ -4,8 +4,8 @@
 	
 
 		
-	
-		$post = var_dump($_POST);
+	if($_POST) {
+		$post = $_POST;
 		$dadosJsonDecodificados["Livro"][] = $post;
 		$fp = fopen('db.json', 'w');
 		fwrite($fp, json_encode($dadosJsonDecodificados));
@@ -13,6 +13,7 @@
 		echo 'Livro enviado ao servidor ';
 		print_r($post);
 		//print_r($dadosJson);
+	} 
 	
 
 ?>
