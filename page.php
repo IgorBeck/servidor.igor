@@ -5,7 +5,7 @@
 
 	if($method === 'POST') {
 		echo "Livro enviado";
-		$values = file_get_contents('php://input');
+		$values = file_get_contents('php://input.json');
 		$dadosJsonDecodificados["Livro"][] = $values;
 		$fp = fopen('db.json', 'w');
 		fwrite($fp, json_encode($dadosJsonDecodificados));
