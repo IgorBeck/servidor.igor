@@ -11,16 +11,6 @@
          "isbn":"1",
          "assuntos":"a"
       }
-      {
-         "nomeAutor":"b",
-         "sobrenome":"b",
-         "titulo":"b",
-         "editora":"b",
-         "cidade":"b",
-         "ano":"b",
-         "paginas":"b",
-         "isbn":"2",
-         "assuntos":"b"
-      }
+      
    ]
 }
