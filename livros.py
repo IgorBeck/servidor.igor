@@ -36,7 +36,7 @@ def livros_per_isbn(isbn):
     devs_per_isbn = [livros for livros in livros if livros['isbn'] == isbn]
     return jsonify(devs_per_isbn), 200
 
-app.route('/livros', methods=['POST'])
+@app.route('/livro', methods=['POST'])
 def save_livros():
         data = request.get_json()
         livros.append(data)
